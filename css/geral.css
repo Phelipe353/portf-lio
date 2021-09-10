@@ -1,0 +1,415 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dd,
+dt,
+dl {
+  margin: 0px;
+  padding: 0px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header*/
+
+header {
+  width: 100%;
+  height: 100px;
+  background: #070f11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 940px;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+}
+
+.bg-menu a {
+  color: white;
+}
+
+.titulo a {
+  font-size: 1.75rem;
+  font-family: "Righteous", "IBM Plex Mono", monospace;
+}
+.titulo::before {
+  content: "</";
+  color: #1cb798;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #1cb798;
+}
+
+.titulo::after {
+  content: ">";
+  color: #1cb798;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #1cb798;
+}
+
+.titulo:hover::before,
+.titulo:hover::after {
+  animation: animationBarra infinite 0.7s;
+}
+
+.titulo.ativo::before,
+.titulo.ativo::after {
+  animation: animationBarra infinite 0.2s;
+}
+
+.menu a {
+  font-size: 0.87rem;
+  padding: 5px 0 6px 0;
+  line-height: 20px;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  margin-left: 40px;
+}
+
+.menu a::after {
+  content: " ";
+  border-bottom: 1px solid white;
+  display: block;
+  width: 60px;
+  margin: 5px auto;
+}
+
+.menu a:hover:after {
+  border-bottom: 1px solid #1cb798;
+  color: #1cb798;
+}
+
+.menu a:hover {
+  color: #1cb798;
+}
+
+/*Apresentação*/
+
+.bg-apresentacao {
+  height: 510px;
+  background: #1e2326;
+  background-image: url("/img/apresentacao2.svg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apresentacao {
+  width: 940px;
+}
+.apresentacao h1 {
+  font-size: 2.25rem;
+  color: white;
+}
+
+.apresentacao h2 {
+  color: #1cb798;
+  font-size: 1.5rem;
+}
+
+.apresentacao h2::after {
+  content: "|";
+  position: relative;
+  animation: animationBarra infinite 1s;
+}
+
+/*Sobre*/
+
+.bg-sobre {
+  background: #252a2e;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 40px 0 65px;
+  justify-content: space-between;
+}
+
+.sobre-info {
+  text-align: center;
+}
+
+.sobre-info h2 {
+  position: relative;
+  color: white;
+  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.sobre-info h2::before {
+  content: " ";
+  position: relative;
+  border-bottom: 1px solid #1cb798;
+  width: 80px;
+  line-height: 42px;
+  bottom: -50px;
+  display: block;
+  margin: 0 auto;
+}
+.sobre-info h2::after {
+  content: " ";
+  border-bottom: 1px solid #1cb798;
+  display: block;
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.sobre-info p {
+  color: white;
+  margin: 25px 10px 50px 0;
+  font-size: 0.875rem;
+}
+
+.sobre-info a {
+  border: 1px solid #1cb798;
+  padding: 0.7rem 2rem;
+  color: white;
+}
+
+.sobre-info a:hover {
+  background: #1cb798;
+  color: #252a2e;
+  font-weight: bold;
+}
+
+.sobre img {
+  margin-left: 10px;
+}
+
+/*skills*/
+
+.bg-skills {
+  background: #1e2326;
+  text-align: center;
+}
+
+.bg-skills h2 {
+  color: white;
+  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding-top: 40px;
+}
+
+.bg-skills h2::before {
+  content: " ";
+  position: relative;
+  border-bottom: 1px solid #1cb798;
+  width: 80px;
+  line-height: 42px;
+  bottom: -50px;
+  display: block;
+  margin: 0 auto;
+}
+.bg-skills h2::after {
+  content: " ";
+  border-bottom: 1px solid #1cb798;
+  display: block;
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0 124px 0;
+}
+
+.skills-list {
+  display: flex;
+  width: 940px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-list li {
+  height: 240px;
+  width: 220px;
+  background: #252a2e;
+}
+
+.skills-list h3 {
+  padding-top: 20px;
+  font-size: 1.125rem;
+  color: white;
+  font-weight: normal;
+}
+
+.skills-list h3::after {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #707070;
+  width: 80px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.skills-list li img {
+  padding-top: 20px;
+}
+
+.skills-list li img:hover {
+  width: 152px;
+  height: 166px;
+}
+
+.bg-skills a {
+  border: 1px solid #1cb798;
+  padding: 0.7rem 2rem;
+  color: white;
+}
+
+.bg-skills a:hover {
+  background: #1cb798;
+  color: #252a2e;
+  font-weight: bold;
+}
+
+.bg-skills a {
+  position: relative;
+  top: -65px;
+  line-height: 0px;
+}
+
+/*projetos*/
+
+.bg-projeto {
+  background: #252a2e;
+  text-align: center;
+}
+
+.bg-projeto h2 {
+  color: white;
+  font-family: "Righteous", "IBM Plex Mono", monospace;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding-top: 40px;
+}
+
+.bg-projeto h2::before {
+  content: " ";
+  position: relative;
+  border-bottom: 1px solid #1cb798;
+  width: 80px;
+  line-height: 42px;
+  bottom: -50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.bg-projeto h2::after {
+  content: " ";
+  border-bottom: 1px solid #1cb798;
+  display: block;
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.projetos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0 100px 0;
+}
+
+.projetos ul {
+  display: flex;
+  width: 940px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projetos ul li {
+  height: 240px;
+  width: 280px;
+  background: #707070;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.projetos li span {
+  color: white;
+  padding: 100px 100px;
+  font-size: 1rem;
+  font-family: "Righteous";
+  letter-spacing: 3px;
+}
+
+.projetos li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projetos li div:hover {
+  background: rgba(28, 183, 152, 0.7);
+  animation: animationProject forwards 1s;
+}
+
+.projetos ul li {
+  background: url("/img/calcfood.svg");
+}
+
+.projetos span::after {
+  content: " ";
+  border-bottom: 1px solid #1cb798;
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+/* animações */
+
+@keyframes animationBarra {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes animationProject {
+  from {
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

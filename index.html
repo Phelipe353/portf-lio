@@ -8,11 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Protifólio de projetos Phelipe dos Santos</title>
 </head>
 
 <body>
+  <!-- menu/apresentação -->
+
   <header>
     <article class="bg-menu">
       <div class="titulo" data-title>
@@ -27,7 +29,6 @@
         </ul>
       </nav>
     </article>
-
   </header>
 
   <section class="bg-apresentacao">
@@ -36,6 +37,8 @@
       <h2>Desenvolvedor Front-End.</h2>
     </div>
   </section>
+
+  <!-- sobre -->
 
   <section class="bg-sobre" id="sobre">
     <article class="sobre">
@@ -49,6 +52,8 @@
       </div>
     </article>
   </section>
+
+  <!-- skills -->
 
   <section class="bg-skills" id="skills">
     <h2>Skills</h2>
@@ -75,34 +80,38 @@
     <a href="certificados.html">CERTIFICADOS</a>
   </section>
 
+  <!-- projetos -->
+
   <section class="bg-projeto" id="projetos">
     <h2>Projetos</h2>
     <div class="projetos">
       <ul>
-        <li class="calcfood">
-          <div><a href="novoProjeto.html">CALCFOOD</a></div>
+        <li class="calcfood" data-modal="abrir">
+          <div><span>CALCFOOD</span></div>
         </li>
-        <li class="pj-vs-clt">
-          <div><a href="pj-vs-clt.html">PJ x CLT</a></div>
+        <li class="pj-vs-clt" data-modal="abrir">
+          <div><span>PJ x CLT</span></div>
         </li>
-        <li>
-          <div><a href="novoProjeto.html">Novo Porjeto</a></div>
-        </li>
-        <li>
-          <div><a href="novoProjeto.html">Novo Porjeto</a></div>
+        <li class="novoProjeto" data-modal="abrir">
+          <div><span>Novo Projeto</span></div>
         </li>
         <li>
-          <div><a href="novoProjeto.html">Novo Porjeto</a></div>
+          <div><span>Novo Projeto</span></div>
         </li>
         <li>
-          <div><a href="novoProjeto.html">Novo Porjeto</a></div>
+          <div><span>Novo Projeto</span></div>
+        </li>
+        <li>
+          <div><span>Novo Projeto</span></div>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="modal-container">
-    <div class="modal">
+  <!-- modal -->
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal-calcFood" data-modal="projeto">
       <button data-modal="fechar" class="fechar">X</button>
       <div class="modal-img">
         <img src="./img/calcfood-modal.svg" alt="CalcFood">
@@ -114,17 +123,56 @@
         <div>
           <ul>
             <li>Para acessar o projeto, clique no botão "CALCFOOD" ou nos links.</li>
+            <li class="modal-btn"><a href="https://phelipe353.github.io/CalcFood/" target="_blank">CALCFOOD</a></li>
+            <li>Link de projeto: <a href="https://phelipe353.github.io/CalcFood/" target="_blank">https://phelipe353.github.io/CalcFood/</a></li>
+            <li>Link de projeto no GitHub: <a href="https://github.com/Phelipe353/CalcFood" target="_blank">https://github.com/Phelipe353/CalcFood</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-pjXclt" data-modal="projeto">
+      <button data-modal="fechar" class="fechar">X</button>
+      <div class="modal-img">
+        <img src="./img/calcfood-modal.svg" alt="CalcFood">
+      </div>
+      <div class='modal-info'>
+        <h2>PJ x CLT</h2>
+        <p>Calcule a quantidade de alimentos para o seu buffet. </p>
+        <p class="modal-obs">Obs: Os cálculos das bebidas alcoólicas só é influenciado pelo número de adultos, pois, o consumo deste produto é proibido para menores de 18 anos. </p>
+        <div>
+          <ul>
+            <li>Para acessar o projeto, clique no botão "CALCFOOD" ou nos links.</li>
             <li class="modal-btn"><a href="calcfood.com">CALCFOOD</a></li>
             <li>Link de projeto: <a href="https://phelipe353.github.io/CalcFood/" target="_blank">https://phelipe353.github.io/CalcFood/</a></li>
             <li>Link de projeto no GitHub: <a href="https://github.com/Phelipe353/CalcFood" target="_blank">https://github.com/Phelipe353/CalcFood</a></li>
           </ul>
         </div>
       </div>
+    </div>
 
+    <div class="modal-novoProjeto" data-modal="projeto">
+      <button data-modal="fechar" class="fechar">X</button>
+      <div class="modal-img">
+        <img src="./img/calcfood-modal.svg" alt="CalcFood">
+      </div>
+      <div class='modal-info'>
+        <h2>Novo Projeto</h2>
+        <p>Calcule a quantidade de alimentos para o seu buffet. </p>
+        <p class="modal-obs">Obs: Os cálculos das bebidas alcoólicas só é influenciado pelo número de adultos, pois, o consumo deste produto é proibido para menores de 18 anos. </p>
+        <div>
+          <ul>
+            <li>Para acessar o projeto, clique no botão "CALCFOOD" ou nos links.</li>
+            <li class="modal-btn"><a href="calcfood.com">CALCFOOD</a></li>
+            <li>Link de projeto: <a href="https://phelipe353.github.io/CalcFood/" target="_blank">https://phelipe353.github.io/CalcFood/</a></li>
+            <li>Link de projeto no GitHub: <a href="https://github.com/Phelipe353/CalcFood" target="_blank">https://github.com/Phelipe353/CalcFood</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
