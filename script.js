@@ -10,7 +10,7 @@ function detalhesInicial(){
 
   setTimeout(() => {
     clearInterval(piscada);
-    title.classList.remove('ativo');
+    title.classList.remove('ativo');  
   }, 2500);
 }  
 
