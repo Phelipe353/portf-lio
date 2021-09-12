@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" href="/css/style.css">
   <title>Protifólio de projetos Phelipe dos Santos</title>
 </head>
@@ -19,9 +20,10 @@
     <article class="bg-menu">
       <div class="titulo" data-title>
         <a href="#">PORTIFÓLIO</a>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
       </div>
-      <nav class="menu">
-        <ul>
+      <nav class="menu" data-menu="suave">
+        <ul data-menu="list" id="menu">
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#curriculo">Currículo</a></li>
@@ -43,8 +45,9 @@
   <section class="bg-sobre" id="sobre">
     <article class="sobre">
       <div class="img">
-        <img src="img/code-05.svg" alt="Desenvolvedor">
+        <img src="img/code-06.svg" alt="Desenvolvedor">
       </div>
+      <div class="divisor"></div>
       <div class="sobre-info">
         <h2>Sobre</h2>
         <p>Olá, me chamo Phelipe e tenho 29 anos, nascido e criado no Distrito Federal. Possuo formação em Educação Física, mas recentemente me interessei muito sobre a área da programação, com isso, além de cursos, estou cursando Analise e desenvolvimento de sistemas para complementar no meu conhecimento na programação.</p>
@@ -87,7 +90,10 @@
     <div class="projetos">
       <ul>
         <li class="calcfood" data-modal="abrir">
-          <div><span>CALCFOOD</span></div>
+          <div>
+            <span>CALCFOOD</span>
+            <img src="img/calcfood.svg" alt="">
+          </div>
         </li>
         <li class="pj-vs-clt" data-modal="abrir">
           <div><span>PJ x CLT</span></div>

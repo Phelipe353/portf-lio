@@ -1,8 +1,12 @@
 import initModal from './modules/modal.js';
+import initMenuMobile from './modules/menuMobile.js';
 
+initModal();
+initMenuMobile();
 
 function detalhesInicial(){
-  const title = document.querySelector('[data-title]');
+  const title = document.querySelector('.titulo a');
+  console.log(title);
   setTimeout(() => {
     title.classList.add('ativo');
   }, 500);
@@ -34,4 +38,5 @@ function typeWrite(elemento){
 }
 typeWrite(document.querySelector('.apresentacao h2'));
 
-initModal();
+
+
