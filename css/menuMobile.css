@@ -4,17 +4,19 @@
 
 @media (max-width: 717px) {
   header.active {
-    height: 344px;
+    height: 100px;
   }
 
   .bg-menu {
     display: block;
+    margin: 0;
   }
 
   .titulo {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-left: 10px;
   }
   /*button menu*/
 
@@ -24,9 +26,10 @@
     padding: 23px 8px;
     background: none;
     border: 1px solid #1cb798;
-    margin-right: 10px;
+    margin-right: 27px;
     box-shadow: 0 0 5px #1cb798;
-    transition: transform 0.3s;
+    box-shadow: inset 0 0 5px #1cb798, 0 0 5px #1cb798;
+    transition: transform 0.5s;
   }
 
   .js [data-menu="button"]::before {
@@ -46,13 +49,14 @@
 
   .js .menu {
     display: none;
-    animation: show-right 1s forwards;
+    position: absolute;
+    background: #070f11;
   }
 
   .js .menu ul {
     display: flex;
     text-align: center;
-    margin-top: 20px;
+    padding-bottom: 10px;
   }
 
   .js .menu ul li {
@@ -67,15 +71,27 @@
   }
 
   .js .menu.active {
-    display: block;
+    display: flex;
+    animation: animationMenu 0.5s forwards;
   }
 
   .menu a::after {
     content: " ";
     border-bottom: 1px solid #1cb798;
     display: block;
-    width: 150px;
+    width: 160px;
     margin-top: 15px;
     box-shadow: 0 0 10px #1cb798;
+  }
+
+  @keyframes animationMenu {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 20px, 0);
+    }
   }
 }

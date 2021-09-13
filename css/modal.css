@@ -17,58 +17,32 @@
   display: flex;
 }
 
-.modal-calcFood {
+.modal-projetos {
   background: white;
   width: 950px;
-  padding: 20px;
+  padding: 10px;
+  margin: 0 25px;
   border: 5px solid #1cb798;
   box-shadow: 0 0 0 10px #1e2326;
   position: relative;
-  display: none;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: #1e2326;
   color: white;
   font-size: 0.875rem;
-  margin: 0 25px;
   animation: modal forwards 0.7s;
+}
+
+.modal-calcFood {
+  display: none;
 }
 
 .modal-pjXclt {
-  background: white;
-  width: 950px;
-  padding: 20px;
-  border: 5px solid #1cb798;
-  box-shadow: 0 0 0 10px #1e2326;
-  position: relative;
   display: none;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background: #1e2326;
-  color: white;
-  font-size: 0.875rem;
-  margin: 0 25px;
-  animation: modal forwards 0.7s;
 }
 
 .modal-novoProjeto {
-  background: white;
-  width: 950px;
-  padding: 20px;
-  border: 5px solid #1cb798;
-  box-shadow: 0 0 0 10px #1e2326;
-  position: relative;
   display: none;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background: #1e2326;
-  color: white;
-  font-size: 0.875rem;
-  margin: 0 25px;
-  animation: modal forwards 0.7s;
 }
 
 .modal-calcFood.ativo {
@@ -84,15 +58,17 @@
 }
 
 .modal-img {
-  max-width: 600px;
+  max-width: 570px;
+}
+
+.modal-img img {
+  width: 100%;
 }
 
 .modal-info {
-  max-width: 369px;
-  margin-right: 10px;
-}
-
-.modal-info {
+  display: block;
+  max-width: 350px;
+  margin: 0 10px;
   text-align: center;
 }
 
@@ -188,5 +164,53 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 717px) {
+  .modal-projetos.ativo {
+    display: block;
+    margin: 0;
+    height: 100vh;
+    border: none;
+    box-shadow: none;
+  }
+  .modal-info h2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    padding-top: 30px;
+    width: 120px;
+    height: 50px;
+  }
+
+  .modal-img {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 90px 0 20px 0;
+  }
+  .modal-info {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .modal-info {
+    max-width: 700px;
+  }
+
+  .modal-info p,
+  .modal-info div {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .fechar {
+    top: 20px;
+    right: 15px;
   }
 }
