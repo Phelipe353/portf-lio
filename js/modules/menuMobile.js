@@ -4,7 +4,7 @@ export default function initeMenuMobile() {
   const menuButton = document.querySelector('[data-menu="button"]');
   const menuList = document.querySelector('[data-menu="suave"]');
   const bgMenu = document.querySelector('header');
-  const eventos = ['click', 'touchstart'];
+  const eventos = ['click'];
 
   if (menuButton) {
     function openMenu(event) {
