@@ -116,7 +116,7 @@ header {
 .bg-apresentacao {
   height: 510px;
   background: #1e2326;
-  background-image: url("/img/apresentacao1.svg");
+  background: url("/img/apresentacao1.svg");
   background-position: center;
   background-size: cover;
   display: flex;
