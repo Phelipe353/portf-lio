@@ -102,12 +102,11 @@
   content: "";
   border-bottom: 1px solid #1cb798;
   display: block;
-  margin: 15px auto;
+  margin: 10px auto;
   width: 100px;
 }
 
 .modal-info ul {
-  margin-top: 20px;
   line-height: 25px;
 }
 
@@ -167,7 +166,7 @@
   }
 }
 
-@media (max-width: 717px) {
+@media (max-width: 700px) {
   .modal-projetos.ativo {
     display: block;
     margin: 0;
@@ -189,7 +188,7 @@
 
   .modal-img {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 250px;
     padding: 90px 0 20px 0;
   }
   .modal-info {
@@ -204,7 +203,7 @@
 
   .modal-info p,
   .modal-info div {
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 0 10px;
   }
