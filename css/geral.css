@@ -116,7 +116,7 @@ header {
 .bg-apresentacao {
   height: 510px;
   background: #1e2326;
-  background: url("/img/apresentacao1.svg");
+  background-image: url("/img/apresentacao1.svg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -260,6 +260,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 0 124px 0;
+  border: none;
 }
 
 .skills-list h3 {
@@ -529,4 +530,9 @@ header {
   .apresentacao h2::after {
     font-size: 1.5rem;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
