@@ -20,6 +20,7 @@ export default function detalheInicial( ) {
   
   
   function typeWrite(elemento){
+    elemento.classList.add('activo');
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
     textoArray.forEach((letra, i)=>{

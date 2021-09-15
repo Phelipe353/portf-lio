@@ -23,7 +23,7 @@
   .js [data-menu="button"] {
     display: flex;
     right: 0;
-    padding: 23px 8px;
+    padding: 20px 8px;
     background: none;
     border: 1px solid #1cb798;
     margin-right: 27px;
@@ -36,9 +36,9 @@
     content: " ";
     display: block;
     height: 3px;
-    width: 35px;
+    width: 30px;
     background: #1cb798;
-    box-shadow: 0 12px #1cb798, 0 -12px #1cb798;
+    box-shadow: 0 10px #1cb798, 0 -10px #1cb798;
   }
 
   .js [data-menu="button"].active {
@@ -72,7 +72,7 @@
 
   .js .menu.active {
     display: flex;
-    animation: animationMenu 0.5s forwards;
+    animation: animationMenu 0.7s forwards;
   }
 
   .menu a::after {
@@ -87,7 +87,7 @@
   @keyframes animationMenu {
     from {
       opacity: 0;
-      transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -20px, 0);
     }
     to {
       opacity: 1;

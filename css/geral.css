@@ -116,7 +116,7 @@ header {
 .bg-apresentacao {
   height: 510px;
   background: #1e2326;
-  background-image: url("/img/apresentacao1.svg");
+  background-image: url("/img/fundoPincipal.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -134,6 +134,11 @@ header {
 .apresentacao h2 {
   color: #1cb798;
   font-size: 1.5rem;
+  display: none;
+}
+
+.apresentacao h2.activo {
+  display: block;
 }
 
 .apresentacao h2::after {
@@ -484,6 +489,9 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
+  .bg-apresentacao {
+    height: 430px;
+  }
   .apresentacao {
     text-align: center;
   }
