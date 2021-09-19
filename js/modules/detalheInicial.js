@@ -1,7 +1,6 @@
 export default function detalheInicial( ) {
   function detalhesInicial(){
     const title = document.querySelector('.titulo a');
-    console.log(title);
     setTimeout(() => {
       title.classList.add('ativo');
     }, 500);
@@ -33,5 +32,5 @@ export default function detalheInicial( ) {
     })
   }
   typeWrite(document.querySelector('.apresentacao h2'));
-  
+
 }
