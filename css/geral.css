@@ -309,6 +309,8 @@ header {
 
 .skills-list li img {
   padding-top: 20px;
+  -webkit-filter: drop-shadow(0 0 10px #191e21);
+  filter: drop-shadow(0 0 10px #191e21);
 }
 
 .skills-list li img:hover {
@@ -320,18 +322,15 @@ header {
   border: 1px solid #1cb798;
   padding: 0.7rem 2rem;
   color: white;
+  position: relative;
+  top: -65px;
+  line-height: 0px;
 }
 
 .bg-skills a:hover {
   background: #1cb798;
   color: #252a2e;
   font-weight: bold;
-}
-
-.bg-skills a {
-  position: relative;
-  top: -65px;
-  line-height: 0px;
 }
 
 /*projetos*/
@@ -482,19 +481,22 @@ header {
 }
 
 .contato ul {
-  padding: 25px 0;
+  padding: 25px 0 50px 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 300px;
 }
 
 .contato ul li {
-  display: block;
+  -webkit-filter: drop-shadow(0 0 10px #191e21);
+  filter: drop-shadow(0 0 10px #191e21);
 }
 
-.contato ul li a {
-  border: 1px solid #1cb798;
+.contato ul li:hover {
+  animation: animationContatos forwards 0.3s;
 }
 
 /* animações */
@@ -514,6 +516,15 @@ header {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes animationContatos {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -10px, 0);
   }
 }
 
