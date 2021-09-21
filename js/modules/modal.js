@@ -3,11 +3,9 @@ export default function initModal() {
   const botaoFechar = document.querySelectorAll('[data-modal="fechar"]');
   const projeto = document.querySelectorAll('[data-modal="projeto"]');
   const containerModal = document.querySelector('[data-modal="container"]');
-
    if(botaoAbrir && botaoFechar && containerModal) {
     
     function toggleModal(i) {
-      console.log(projeto[i]);
       projeto[i].classList.add('ativo');
       containerModal.classList.add('ativo');
     }
@@ -15,8 +13,6 @@ export default function initModal() {
       event.preventDefault();
     }
     function cliqueForaModal(event) {
-      console.log(event);
-      console.log(this);
       if(event.target === this) {
         projeto.forEach((item)=>{
           item.classList.remove('ativo');

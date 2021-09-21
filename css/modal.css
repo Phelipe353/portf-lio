@@ -45,6 +45,14 @@
   display: none;
 }
 
+.modal-flexblog {
+  display: none;
+}
+
+.modal-animais {
+  display: none;
+}
+
 .modal-calcFood.ativo {
   display: flex;
 }
@@ -54,6 +62,14 @@
 }
 
 .modal-bikeCraft.ativo {
+  display: flex;
+}
+
+.modal-flexblog.ativo {
+  display: flex;
+}
+
+.modal-animais.ativo {
   display: flex;
 }
 
