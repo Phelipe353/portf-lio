@@ -116,9 +116,9 @@ header {
 .bg-apresentacao {
   height: 510px;
   background: #1e2326;
-  background: url("../img/fundoPincipal.jpg");
-  background-position: center;
+  background: url("../img/fundoPincipal.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
