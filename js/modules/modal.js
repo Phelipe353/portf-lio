@@ -8,6 +8,7 @@ export default function initModal() {
     function toggleModal(i) {
       projeto[i].classList.add('ativo');
       containerModal.classList.add('ativo');
+      console.log('test');
     }
     function previne (event){
       event.preventDefault();
@@ -34,3 +35,4 @@ export default function initModal() {
     containerModal.addEventListener('click', cliqueForaModal);
   }
 }
+

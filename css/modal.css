@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.modal-container.ativo:active {
+.modal-container.ativo {
   display: flex;
 }
 
