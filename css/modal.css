@@ -97,7 +97,7 @@
 }
 
 .modal-info h2::before {
-  content: " ";
+  content: ' ';
   position: relative;
   border-bottom: 1px solid #1cb798;
   width: 80px;
@@ -107,7 +107,7 @@
   margin: 0 auto;
 }
 .modal-info h2::after {
-  content: " ";
+  content: ' ';
   border-bottom: 1px solid #1cb798;
   display: block;
   width: 40px;
@@ -123,10 +123,24 @@
   margin-top: 20px;
 }
 .modal-obs::after {
-  content: "";
+  content: '';
   border-bottom: 1px solid #1cb798;
   display: block;
   margin: 10px auto;
+  width: 100px;
+}
+
+.icons-linguagens img {
+  width: 40px;
+  margin: 0 7px;
+}
+
+.icons-linguagens::before,
+.icons-linguagens::after {
+  content: '';
+  border-bottom: 1px solid #1cb798;
+  display: block;
+  margin: 15px auto;
   width: 100px;
 }
 
@@ -171,7 +185,7 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   color: white;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   cursor: pointer;
 }
 

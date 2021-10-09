@@ -10,7 +10,7 @@ dt,
 dl {
   margin: 0px;
   padding: 0px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 a,
@@ -47,26 +47,26 @@ header {
 
 .titulo a {
   font-size: 1.75rem;
-  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
 }
 .titulo a::before {
-  content: "</";
+  content: '</';
   color: #1cb798;
   font-size: 1.75rem;
   font-weight: bold;
   text-shadow: 0 0 10px #1cb798;
   margin-right: 3px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .titulo a::after {
-  content: ">";
+  content: '>';
   color: #1cb798;
   font-size: 1.75rem;
   font-weight: bold;
   text-shadow: 0 0 10px #1cb798;
   margin-left: 3px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .titulo a:hover::before,
@@ -95,7 +95,7 @@ header {
 }
 
 .menu a::after {
-  content: " ";
+  content: ' ';
   border-bottom: 1px solid white;
   display: block;
   width: 60px;
@@ -116,7 +116,7 @@ header {
 .bg-apresentacao {
   height: 510px;
   background: #1e2326;
-  background: url("../img/fundoPincipal.jpg") no-repeat center;
+  background: url('../img/fundoPincipal.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -142,7 +142,7 @@ header {
 }
 
 .apresentacao h2::after {
-  content: "|";
+  content: '|';
   position: relative;
   animation: animationBarra infinite 1s;
   text-shadow: 0 0 10px #1cb798;
@@ -172,13 +172,13 @@ header {
 .sobre-info h2 {
   position: relative;
   color: white;
-  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
   font-size: 2rem;
   letter-spacing: 2px;
 }
 
 .sobre-info h2::before {
-  content: " ";
+  content: ' ';
   position: relative;
   border-bottom: 1px solid #1cb798;
   width: 80px;
@@ -188,7 +188,7 @@ header {
   margin: 0 auto;
 }
 .sobre-info h2::after {
-  content: " ";
+  content: ' ';
   border-bottom: 1px solid #1cb798;
   display: block;
   width: 40px;
@@ -211,11 +211,11 @@ header {
 }
 
 .sobre-info a::after {
-  content: url("../img/download-branco.svg");
+  content: url('../img/download-branco.svg');
   margin-left: 10px;
 }
 .sobre-info a:hover:after {
-  content: url("../img/download.svg");
+  content: url('../img/download.svg');
 }
 .sobre-info a:hover {
   background: #1cb798;
@@ -243,14 +243,14 @@ header {
 
 .bg-skills h2 {
   color: white;
-  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
   font-size: 2rem;
   letter-spacing: 2px;
   padding-top: 40px;
 }
 
 .bg-skills h2::before {
-  content: " ";
+  content: ' ';
   position: relative;
   border-bottom: 1px solid #1cb798;
   width: 80px;
@@ -260,7 +260,7 @@ header {
   margin: 0 auto;
 }
 .bg-skills h2::after {
-  content: " ";
+  content: ' ';
   border-bottom: 1px solid #1cb798;
   display: block;
   width: 40px;
@@ -284,7 +284,7 @@ header {
 }
 
 .skills-list h3::after {
-  content: " ";
+  content: ' ';
   display: block;
   border-bottom: 2px solid #707070;
   width: 80px;
@@ -342,14 +342,14 @@ header {
 
 .bg-projeto h2 {
   color: white;
-  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
   letter-spacing: 2px;
   font-size: 2rem;
   padding-top: 40px;
 }
 
 .bg-projeto h2::before {
-  content: " ";
+  content: ' ';
   position: relative;
   border-bottom: 1px solid #1cb798;
   width: 80px;
@@ -360,7 +360,7 @@ header {
 }
 
 .bg-projeto h2::after {
-  content: " ";
+  content: ' ';
   border-bottom: 1px solid #1cb798;
   display: block;
   width: 40px;
@@ -416,7 +416,7 @@ header {
 .projetos li div span {
   color: white;
   font-size: 1rem;
-  font-family: "Righteous";
+  font-family: 'Righteous';
   letter-spacing: 3px;
   color: rgba(0, 0, 0, 0);
   flex-grow: 1;
@@ -431,7 +431,7 @@ header {
 }
 
 .projetos span::after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 60px;
   margin: 0 auto;
@@ -457,11 +457,11 @@ header {
 .contato h2 {
   padding-top: 40px;
   font-size: 2rem;
-  font-family: "Righteous", "IBM Plex Mono", monospace;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
 }
 
 .contato h2::before {
-  content: " ";
+  content: ' ';
   position: relative;
   border-bottom: 1px solid #1cb798;
   width: 80px;
@@ -472,7 +472,7 @@ header {
 }
 
 .contato h2::after {
-  content: " ";
+  content: ' ';
   border-bottom: 1px solid #1cb798;
   display: block;
   width: 40px;
