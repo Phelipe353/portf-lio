@@ -308,6 +308,8 @@ header {
 }
 
 .skills-list li img {
+  width: 133px;
+  height: 144px;
   padding-top: 20px;
   -webkit-filter: drop-shadow(0 0 10px #191e21);
   filter: drop-shadow(0 0 10px #191e21);
