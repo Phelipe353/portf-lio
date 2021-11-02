@@ -1,0 +1,130 @@
+.slide img {
+  display: block;
+  max-width: 100%;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 700px;
+  margin: 0 20px;
+  overflow: hidden;
+  opacity: 0.6;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide li img {
+  border-radius: 4px;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide li.active img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.slide h2 {
+  margin: 20px 0 10px 0;
+  font-size: 1.5rem;
+  line-height: 16px;
+  letter-spacing: 3px;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
+  color: #fff;
+}
+
+.slide h2::after {
+  content: ' ';
+  border-bottom: 1px solid #1cb798;
+  display: block;
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.slide p {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #fff;
+  font-size: 0.875rem;
+  max-width: 560px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.slide p a {
+  color: #1cb798;
+}
+
+.custom-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.custom-control li {
+  opacity: 0.6;
+  transform: scale(0.8);
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background: #1cb798;
+  overflow: hidden;
+  margin: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.custom-control li.active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 0px 5px #1cb798;
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  border: 1px solid #1cb798;
+  background: transparent;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow-nav button:hover {
+  background: #1cb798;
+  transition: 0.2s;
+}
+
+.arrow-nav button:hover svg polygon {
+  fill: #252a2e;
+  stroke: #252a2e;
+  transition: 0.2s;
+}
+
+.arrow-nav button.prev {
+  transform: rotate(-180deg);
+}

@@ -22,6 +22,39 @@ ul {
   list-style: none;
 }
 
+/* button */
+
+.button {
+  border: 1px solid #1cb798;
+  border-radius: 4px;
+  background: transparent;
+  padding: 0px;
+}
+
+.button a {
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 2rem;
+}
+
+.button:hover {
+  background: #1cb798;
+  transition: 0.4s;
+}
+
+.button:hover span svg path {
+  fill: #252a2e;
+}
+
+.button:hover a {
+  color: #252a2e;
+  font-weight: bold;
+}
+
 /* Header*/
 
 header {
@@ -31,6 +64,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .bg-menu {
@@ -38,7 +72,7 @@ header {
   align-items: center;
   width: 940px;
   justify-content: space-between;
-  margin: 0 10px 0 10px;
+  margin: 0 15px;
 }
 
 .bg-menu a {
@@ -105,10 +139,12 @@ header {
 .menu a:hover:after {
   border-bottom: 1px solid #1cb798;
   color: #1cb798;
+  transition: 0.2s;
 }
 
 .menu a:hover {
   color: #1cb798;
+  transition: 0.2s;
 }
 
 /*Apresentação*/
@@ -116,15 +152,17 @@ header {
 .bg-apresentacao {
   height: 510px;
   background: #1e2326;
-  background: url('../img/fundoPincipal.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .apresentacao {
-  width: 940px;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 3rem;
 }
 .apresentacao h1 {
   font-size: 2.25rem;
@@ -144,7 +182,7 @@ header {
 .apresentacao h2::after {
   content: '|';
   position: relative;
-  animation: animationBarra infinite 1s;
+  animation: animationBarra infinite 0.7s;
   text-shadow: 0 0 10px #1cb798;
   font-size: 2rem;
   line-height: 1.5rem;
@@ -161,7 +199,7 @@ header {
   align-items: center;
   margin: 0 auto;
   max-width: 940px;
-  padding: 40px 0 65px;
+  padding: 40px 0 60px;
   justify-content: space-between;
 }
 
@@ -198,29 +236,15 @@ header {
 
 .sobre-info p {
   color: white;
-  margin: 25px 10px 50px 0;
+  margin: 25px 10px 40px 0;
   font-size: 0.875rem;
   max-width: 460px;
 }
 
-.sobre-info a {
-  border: 1px solid #1cb798;
-  padding: 0.7rem 2rem;
-  color: white;
-  line-height: 20px;
-}
-
-.sobre-info a::after {
-  content: url('../img/download-branco.svg');
-  margin-left: 10px;
-}
-.sobre-info a:hover:after {
-  content: url('../img/download.svg');
-}
-.sobre-info a:hover {
-  background: #1cb798;
-  color: #252a2e;
-  font-weight: bold;
+.sobre-info span {
+  max-height: 24px;
+  max-width: 24px;
+  margin-left: 5px;
 }
 
 .sobre img {
@@ -272,8 +296,12 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 0 124px 0;
+  margin: 0 0 38px 0;
   border: none;
+}
+
+#skills .button {
+  margin-bottom: 55px;
 }
 
 .skills-list h3 {
@@ -301,38 +329,27 @@ header {
 }
 
 .skills-list li {
-  height: 240px;
-  width: 220px;
+  height: 176px;
+  width: 160px;
   background: #252a2e;
   margin: 25px 7px 0 7px;
+  border-radius: 4px;
 }
 
 .skills-list li img {
-  width: 133px;
-  height: 144px;
-  padding-top: 20px;
+  width: 90px;
+  padding-top: 15px;
+}
+
+.skills-list li img {
   -webkit-filter: drop-shadow(0 0 10px #191e21);
   filter: drop-shadow(0 0 10px #191e21);
 }
 
-.skills-list li img:hover {
-  width: 152px;
-  height: 166px;
-}
-
-.bg-skills a {
-  border: 1px solid #1cb798;
-  padding: 0.7rem 2rem;
-  color: white;
-  position: relative;
-  top: -65px;
-  line-height: 0px;
-}
-
-.bg-skills a:hover {
-  background: #1cb798;
-  color: #252a2e;
-  font-weight: bold;
+.skills-list li:hover img {
+  -webkit-filter: drop-shadow(0 0 10px var(--clr));
+  filter: drop-shadow(0 0 10px var(--clr));
+  transition: 0.3s;
 }
 
 /*projetos*/
@@ -340,9 +357,10 @@ header {
 .bg-projeto {
   background: #252a2e;
   text-align: center;
+  padding-bottom: 55px;
 }
 
-.bg-projeto h2 {
+.bg-projeto .title {
   color: white;
   font-family: 'Righteous', 'IBM Plex Mono', monospace;
   letter-spacing: 2px;
@@ -350,7 +368,7 @@ header {
   padding-top: 40px;
 }
 
-.bg-projeto h2::before {
+.bg-projeto .title::before {
   content: ' ';
   position: relative;
   border-bottom: 1px solid #1cb798;
@@ -361,7 +379,7 @@ header {
   margin: 0 auto;
 }
 
-.bg-projeto h2::after {
+.bg-projeto .title::after {
   content: ' ';
   border-bottom: 1px solid #1cb798;
   display: block;

@@ -38,6 +38,10 @@
       <h1>Phelipe dos Santos</h1>
       <h2>Desenvolvedor Front-End.</h2>
     </div>
+    <div data-menu="suave">
+      <button class="button"><a href="#projetos">PROJETOS</a> </button>
+    </div>
+
   </section>
 
   <!-- sobre -->
@@ -51,7 +55,17 @@
       <div class="sobre-info">
         <h2>Sobre</h2>
         <p>Olá, me chamo Phelipe e tenho 29 anos, nascido e criado no Distrito Federal. Possuo formação em Educação Física, mas recentemente me interessei muito sobre a área da programação, com isso, além de cursos, estou cursando Analise e desenvolvimento de sistemas para complementar no meu conhecimento na programação.</p>
-        <a href="curriculo/Currículo - Phelipe dos Santos..pdf" download="Phelipe dos Santos..pdf" type="application/pdf">CURRÍCULO</a>
+        <button class="button">
+          <a href="curriculo/Phelipe Andrade.pdf" download="Phelipe dos Santos..pdf" type="application/pdf">CURRÍCULO
+            <span>
+              <svg id="download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path id="Caminho_6" data-name="Caminho 6" d="M13,12h3l-4,4L8,12h3V8h2Zm2-8H5V20H19V8H15ZM3,2.992A1,1,0,0,1,4,2H16l5,5V20.993A1,1,0,0,1,20.007,22H3.993A1,1,0,0,1,3,21.008Z" fill="#fff" />
+              </svg>
+            </span>
+          </a>
+
+        </button>
+
       </div>
     </article>
   </section>
@@ -62,71 +76,97 @@
     <h2>Skills</h2>
     <article class="skills">
       <ul class="skills-list">
-        <li>
+        <li style=" --clr:#E55638;">
           <h3>HTML</h3>
-          <img src="img/logo-html-2.svg" alt="html">
+          <img style=" --clr:#E55638;" src="img/logo-html-2.svg" alt="html">
         </li>
         <li>
           <h3>CSS</h3>
-          <img src="img/logo-css-2.svg" alt="css">
+          <img style="--clr:#4E63AC;" src="img/logo-css-2.svg" alt="css">
         </li>
         <li>
           <h3>JavaScript</h3>
-          <img src="img/logo-js.svg" alt="JavaScript">
+          <img style="--clr:#F7DF1E;" src="img/logo-js.svg" alt="JavaScript">
         </li>
         <li>
           <h3>Git</h3>
-          <img src="img/logo-git.svg" alt="Git">
+          <img style="--clr:#DE4C36;" src="img/logo-git.svg" alt="Git">
         </li>
         <li>
           <h3>React</h3>
-          <img src="img/reactjs.svg" alt="Reactjs">
+          <img style="--clr:#00D8FF;" src="img/reactjs.svg" alt="Reactjs">
         </li>
       </ul>
     </article>
-    <a href="certificados.html">CERTIFICADOS</a>
+    <button class="button">
+      <a href="certificados.html">CERTIFICADOS</a>
+    </button>
+
   </section>
 
   <!-- projetos -->
 
   <section class="bg-projeto" id="projetos">
-    <h2>Projetos</h2>
-    <div class="projetos">
-      <ul>
-        <li data-modal="abrir">
-          <div>
-            <span>CalcFood</span>
-            <img src="img/calcfood.svg" alt="CalcFood">
-          </div>
+    <h2 class="title">Projetos</h2>
+    <ul class="custom-control">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="slide-wrapper">
+      <ul class="slide">
+
+        <li>
+          <a target="_blank" href="https://phelipe-andrade.github.io/CalcFood/"><img src="img/calc.png" alt=""></a>
+          <h2>CalcFood</h2>
+          <p>Calcule a quantidade aproximada de comida para um buffet. Dê uma olhada no projeto em <a href="https://phelipe-andrade.github.io/CalcFood/" target="_blank">https://phelipe-andrade.github.io/CalcFood/</a></p>
         </li>
-        <li data-modal="abrir">
-          <div><span>PJ x CLT</span></div>
+
+        <li>
+          <a target="_blank" href="https://phelipe-andrade.github.io/quanto-tempo/"><img src="img/tempo.png" alt=""></a>
+          <h2>Quanto tempo?</h2>
+          <p>Saiba quanto tempo falta até uma determinada data. Dê uma olhada no projeto em <a href="https://phelipe-andrade.github.io/tempo/" target="_blank">https://phelipe-andrade.github.io/tempo/</a></p>
         </li>
-        <li data-modal="abrir">
-          <div>
-            <span>Quanto Tempo?</span>
-            <img src="img/tempo.svg" alt="Quanto tempo?">
-          </div>
+
+        <li>
+          <a target="_blank" href="https://phelipe-andrade.github.io/palpite/"><img src="img/palpite.png" alt=""></a>
+          <h2>Qual é o número?</h2>
+          <p>Projeto feito para um processo seletivo. Tente acertar o numero aleatório entre 1 a 300 (obs: erros aleatórios na requisição podem ocorrer). Dê uma olhada no projeto em <a href="https://phelipe-andrade.github.io/palpite/" target="_blank">https://phelipe-andrade.github.io/palpite/</a></p>
         </li>
-        <li data-modal="abrir">
-          <div>
-            <span>BikeCraft</span>
-            <img src="img/bikecraft.svg" alt="BikeCraft">
-          </div>
+
+        <li>
+          <a target="_blank" href="https://phelipe-andrade.github.io/bikecraft/"><img src="img/bike.png" alt=""></a>
+          <h2>BikeCraft</h2>
+          <p>Projeto criado no curso de Web Design completo da Origamid. Dê uma olhada no projeto em <a href="https://phelipe-andrade.github.io/bikecraft/" target="_blank">https://phelipe-andrade.github.io/bikecraft/</a></p>
         </li>
-        <li data-modal="abrir">
-          <div>
-            <span>FlexBlog</span>
-            <img src="img/flexblog.svg" alt="FlexBlog">
-          </div>
+
+        <li>
+          <a target="_blank" href="https://phelipe-andrade.github.io/flexblog/"><img src="img/flex.png" alt=""></a>
+          <h2>FlexBlog</h2>
+          <p>Projeto criado no curso de CSS Flexbox da Origamid. Dê uma olhada no projeto em <a href="https://phelipe-andrade.github.io/flexblog/" target="_blank">https://phelipe-andrade.github.io/flexblog/</a></p>
         </li>
-        <li data-modal="abrir">
-          <div>
-            <span>Animais</span>
-            <img src="img/animais.svg" alt="Animais">
-          </div>
+
+        <li>
+          <a target="_blank" href="https://phelipe-andrade.github.io/animais/"><img src="img/animais.png" alt=""></a>
+          <h2>Animais</h2>
+          <p>Projeto criado no curso de JavaScript ES6+ Completo da Origamid. Dê uma olhada no projeto em <a href="https://phelipe-andrade.github.io/animais/" target="_blank">https://phelipe-andrade.github.io/animais/</a></p>
         </li>
       </ul>
+    </div>
+
+    <div class="arrow-nav">
+      <button class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <polygon fill="#FFF" stroke="#FFF" stroke-linejoin="round" points="0 0 0 14 11 7" transform="translate(1 1)" />
+        </svg>
+      </button>
+
+      <button class="next"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <polygon fill="#FFF" stroke="#FFF" stroke-linejoin="round" points="0 0 0 14 11 7" transform="translate(1 1)" />
+        </svg>
+      </button>
     </div>
   </section>
 
@@ -147,162 +187,6 @@
 
     </ul>
   </footer>
-
-  <!-- modal -->
-
-  <section class="modal-container" data-modal="container">
-
-    <!--modal CalcFood-->
-    <div class="modal-calcFood modal-projetos" data-modal="projeto">
-      <button data-modal="fechar" class="fechar">X</button>
-      <div class="modal-img">
-        <img src="./img/calcfood-modal.svg" alt="CalcFood">
-      </div>
-      <div class='modal-info'>
-        <h2>CalcFood</h2>
-        <p>Calcule a quantidade de alimentos para o seu buffet. </p>
-        <div class="icons-linguagens">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTMLS">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
-        </div>
-        <div>
-          <ul>
-            <li>Para acessar o projeto, clique no botão "CALCFOOD" ou nos links.</li>
-            <li class="modal-btn"><a href="https://phelipe-andrade.github.io/CalcFood/" target="_blank">CALCFOOD</a></li>
-            <li>Link de projeto: <a href="https://phelipe-andrade.github.io/CalcFood/" target="_blank">https://phelipe-andrade.github.io/CalcFood</a></li>
-            <li>Link de projeto no GitHub: <a href="https://github.com/phelipe-andrade/CalcFood" target="_blank">https://github.com/phelipe-andrade/CalcFood</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--modal PJ X CLT-->
-    <div class="modal-pjXclt modal-projetos" data-modal="projeto">
-      <button data-modal="fechar" class="fechar">X</button>
-      <div class="modal-img">
-        <img src="./img/calcfood-modal.svg" alt="CalcFood">
-      </div>
-      <div class='modal-info'>
-        <h2>PJ x CLT</h2>
-        <p>Em breve </p>
-        <div class="icons-linguagens">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTMLS">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
-        </div>
-        <div>
-          <ul>
-            <li>Para acessar o projeto, clique no botão "PJ X CLT" ou nos links.</li>
-            <li class="modal-btn"><a href="calcfood.com">PJ X CLT</a></li>
-            <li>Link de projeto: <a href="https://phelipe-andrade.github.io/CalcFood" target="_blank">https://phelipe-andrade.github.io/CalcFood</a></li>
-            <li>Link de projeto no GitHub: <a href="https://github.com/phelipe-andrade/CalcFood" target="_blank">https://github.com/phelipe-andrade/CalcFood</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--modal tempo-->
-    <div class="modal-tempo modal-projetos" data-modal="projeto">
-      <button data-modal="fechar" class="fechar">X</button>
-      <div class="modal-img">
-        <img src="./img/tempo-modal.svg" alt="tempo">
-      </div>
-      <div class='modal-info'>
-        <h2>Quanto Tempo?</h2>
-        <p>Calcula quanto tempo falta para uma determinada data, de acordo com o dia e horário atual</p>
-        <div class="icons-linguagens">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTMLS">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
-        </div>
-        <div>
-          <ul>
-            <li>Para acessar o projeto, clique no botão "TEMPO" ou nos links.</li>
-            <li class="modal-btn"><a href="https://phelipe-andrade.github.io/quanto-tempo/" target="blank">TEMPO</a></li>
-            <li>Link de projeto: <a href="https://phelipe-andrade.github.io/quanto-tempo" target="_blank">https://phelipe-andrade.github.io/quanto-tempo</a></li>
-            <li>Link de projeto no GitHub: <a href="https://github.com/phelipe-andrade/quanto-tempo" target="_blank">https://github.com/phelipe-andrade/quanto-tempo</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--modal bikecraft-->
-    <div class="modal-bikeCraft modal-projetos" data-modal="projeto">
-      <button data-modal="fechar" class="fechar">X</button>
-      <div class="modal-img">
-        <img src="./img/bikecraft-modal.svg" alt="bikecraft">
-      </div>
-      <div class='modal-info'>
-        <h2>BikeCraft</h2>
-        <p>O projeto foi construido durante o curso de Desenvolvdor Web Design Completo da Origamid.</p>
-        <div class="icons-linguagens">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTMLS">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
-        </div>
-        <div>
-          <ul>
-            <li>Para acessar o projeto, clique no botão "BIKECRAFT" ou nos links.</li>
-            <li class="modal-btn"><a href="https://phelipe-andrade.github.io/bikecraft/" target="blank">BIKECRAFT</a></li>
-            <li>Link de projeto: <a href="https://phelipe-andrade.github.io/bikecraft/" target="_blank">https://phelipe-andrade.github.io/bikecraft</a></li>
-            <li>Link de projeto no GitHub: <a href="https://github.com/phelipe-andrade/bikecraft" target="_blank">https://github.com/phelipe-andrade/bikecraft</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--modal FlexBlog-->
-    <div class="modal-flexblog modal-projetos" data-modal="projeto">
-      <button data-modal="fechar" class="fechar">X</button>
-      <div class="modal-img">
-        <img src="./img/flexblog-modal.svg" alt="FlexBlog">
-      </div>
-      <div class='modal-info'>
-        <h2>FlexBlog</h2>
-        <p> Projeto construido durante o curso de CSS Flexbox da Origamid. Destaca a utilização do CSS Flexbox para criar um layout responsivo e flexível.</p>
-        <div>
-          <div class="icons-linguagens">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTMLS">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
-          </div>
-          <ul>
-            <li>Para acessar o projeto, clique no botão "FLEXBLOG" ou nos links.</li>
-            <li class="modal-btn"><a href="https://phelipe-andrade.github.io/flexblog/" target="blank">FLEXBLOG</a></li>
-            <li>Link de projeto: <a href="https://phelipe-andrade.github.io/flexblog/" target="_blank">https://phelipe-andrade.github.io/flexblog</a></li>
-            <li>Link de projeto no GitHub: <a href="https://github.com/phelipe-andrade/flexblog" target="_blank">https://github.com/phelipe-andrade/flexblog</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--modal Animais-->
-    <div class="modal-animais modal-projetos" data-modal="projeto">
-      <button data-modal="fechar" class="fechar">X</button>
-      <div class="modal-img">
-        <img src="./img/animais-modal.svg" alt="animais">
-      </div>
-      <div class='modal-info'>
-        <h2>Animais</h2>
-        <p> Projeto construido durante o curso de JavaScript Completo E6+ da Origamid.</p>
-        <div class="icons-linguagens">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTMLS">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
-        </div>
-        <div>
-          <ul>
-            <li>Para acessar o projeto, clique no botão "ANIMAIS" ou nos links.</li>
-            <li class="modal-btn"><a href="https://phelipe-andrade.github.io/animais/" target="blank">ANIMAIS</a></li>
-            <li>Link de projeto: <a href="https://phelipe-andrade.github.io/animais/" target="_blank">https://phelipe-andrade.github.io/animais</a></li>
-            <li>Link de projeto no GitHub: <a href="https://github.com/phelipe-andrade/animais" target="_blank">https://github.com/phelipe-andrade/animais</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </section>
 
   <script type="module" src="js/script.js"></script>
 </body>
