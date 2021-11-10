@@ -29,5 +29,5 @@ export default function detalheInicial() {
       }, 1000);
     });
   }
-  typeWrite(document.querySelector('.apresentacao h2'));
+  typeWrite(document.querySelector(''));
 }

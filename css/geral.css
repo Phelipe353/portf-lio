@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
 body,
 h1,
 h2,
@@ -60,11 +62,11 @@ ul {
 header {
   width: 100%;
   height: 100px;
-  background: #070f11;
+  background: linear-gradient(#070f11, transparent);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
 }
 
 .bg-menu {
@@ -82,23 +84,26 @@ header {
 .titulo a {
   font-size: 1.75rem;
   font-family: 'Righteous', 'IBM Plex Mono', monospace;
+  line-height: 2.07rem;
 }
 .titulo a::before {
   content: '</';
-  color: #1cb798;
+  color: #bcf3e9;
   font-size: 1.75rem;
   font-weight: bold;
-  text-shadow: 0 0 10px #1cb798;
+  text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+    0 0 8px #1cb798, 0 0 16px #1cb798;
   margin-right: 3px;
   font-family: 'IBM Plex Mono', monospace;
 }
 
 .titulo a::after {
   content: '>';
-  color: #1cb798;
+  color: #bcf3e9;
   font-size: 1.75rem;
   font-weight: bold;
-  text-shadow: 0 0 10px #1cb798;
+  text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+    0 0 8px #1cb798, 0 0 16px #1cb798;
   margin-left: 3px;
   font-family: 'IBM Plex Mono', monospace;
 }
@@ -126,66 +131,83 @@ header {
 
 .menu ul li {
   margin-left: 40px;
+  text-transform: uppercase;
 }
 
 .menu a::after {
   content: ' ';
   border-bottom: 1px solid white;
   display: block;
-  width: 60px;
+  width: 0;
   margin: 0 auto;
+  transition: 0.2s;
 }
 
 .menu a:hover:after {
-  border-bottom: 1px solid #1cb798;
-  color: #1cb798;
-  transition: 0.2s;
+  border-bottom: 1px solid #bcf3e9;
+  width: 40px;
+  box-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798, 0 0 8px #1cb798,
+    0 0 16px #1cb798;
+  transition: 0.3s;
 }
 
 .menu a:hover {
-  color: #1cb798;
-  transition: 0.2s;
+  color: #bcf3e9;
+  text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+    0 0 8px #1cb798, 0 0 16px #1cb798;
+  transition: 0.3s;
 }
 
 /*Apresentação*/
 
 .bg-apresentacao {
-  height: 510px;
+  height: 100vh;
   background: #1e2326;
+  background: url('../img/background.jpg') no-repeat;
+  background-position: top;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-end;
 }
+
 .apresentacao {
-  text-align: center;
-  width: 500px;
-  margin-bottom: 3rem;
+  text-align: start;
+  margin: 0 0 60px 30px;
 }
+
 .apresentacao h1 {
-  font-size: 2.25rem;
-  color: white;
+  font-family: 'Poppins', 'Righteous', 'IBM Plex Mono', monospace;
+  letter-spacing: 4px;
+  font-size: 11rem;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  text-transform: uppercase;
+  line-height: 129px;
+  margin-left: 5px;
 }
 
 .apresentacao h2 {
-  color: #1cb798;
-  font-size: 1.5rem;
-  display: none;
-}
-
-.apresentacao h2.activo {
-  display: block;
-}
-
-.apresentacao h2::after {
-  content: '|';
-  position: relative;
-  animation: animationBarra infinite 0.7s;
-  text-shadow: 0 0 10px #1cb798;
+  color: #fff;
   font-size: 2rem;
-  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 15px 0 0 10px;
+}
+
+.apresentacao h2 span {
+  color: #bcf3e9;
+  text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+    0 0 8px #1cb798, 0 0 16px #1cb798;
+}
+
+.apresentacao .end {
+  animation: front 1s linear forwards;
+}
+
+.apresentacao button {
+  margin: 15px 0 0 10px;
 }
 
 /*Sobre*/
@@ -521,6 +543,27 @@ header {
 
 /* animações */
 
+@keyframes front {
+  0%,
+  30.1%,
+  40%,
+  80.1%,
+  90% {
+    color: #116b59;
+    text-shadow: none;
+  }
+
+  30%,
+  40.1%,
+  80%,
+  90.1%,
+  100% {
+    color: #bcf3e9;
+    text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+      0 0 8px #1cb798, 0 0 16px #1cb798;
+  }
+}
+
 @keyframes animationBarra {
   50% {
     opacity: 1;
@@ -551,10 +594,6 @@ header {
 /* responsivo */
 
 @media only screen and (max-width: 1000px) {
-  .apresentacao h1,
-  .apresentacao h2 {
-    margin: 0 10px;
-  }
   .skills-list li {
     margin: 25px 10px 0 10px;
   }
