@@ -13,6 +13,14 @@ export default function detalheInicial() {
       clearInterval(piscada);
       title.classList.remove('ativo');
     }, 2500);
+
+    const front = document.querySelector('.apresentacao .end');
+
+    function addClass(status) {
+      front.classList.toggle('active');
+    }
+    setInterval(addClass, 1000);
+    setInterval(addClass, 2000);
   }
 
   detalhesInicial();
@@ -29,5 +37,5 @@ export default function detalheInicial() {
       }, 1000);
     });
   }
-  typeWrite(document.querySelector(''));
+  //typeWrite(document.querySelector(''));
 }

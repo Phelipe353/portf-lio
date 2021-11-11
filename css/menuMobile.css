@@ -2,11 +2,7 @@
   display: none;
 }
 
-@media (max-width: 700px) {
-  header.active {
-    height: 100px;
-  }
-
+@media (max-width: 717px) {
   .bg-menu {
     display: block;
     margin: 0;
@@ -76,9 +72,8 @@
   .js .menu ul {
     display: flex;
     flex-direction: column;
-
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   .js .menu ul li {
