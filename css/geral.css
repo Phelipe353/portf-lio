@@ -168,7 +168,6 @@ header.active {
   height: 100vh;
   background: #1e2326;
   background: url('../img/background.jpg') no-repeat;
-  background-position: top;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -225,7 +224,7 @@ header.active {
   align-items: center;
   margin: 0 auto;
   max-width: 940px;
-  padding: 40px 0 60px;
+  padding: 40px 0 50px;
   justify-content: space-between;
 }
 
@@ -289,6 +288,7 @@ header.active {
 .bg-skills {
   background: #1e2326;
   text-align: center;
+  border: none;
 }
 
 .bg-skills h2 {
@@ -326,8 +326,8 @@ header.active {
   border: none;
 }
 
-#skills .button {
-  margin-bottom: 55px;
+.bg-skills .button {
+  margin-bottom: 50px;
 }
 
 .skills-list h3 {
@@ -645,25 +645,24 @@ header.active {
 
   .apresentacao {
     text-align: center;
+    margin: 0;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    padding: 10px 0;
   }
 
   .apresentacao h1 {
     font-size: 6.6rem;
     line-height: 95px;
     padding: 0 10px;
-    backdrop-filter: blur(3px);
-    border-radius: 4px;
   }
 
   .apresentacao h2 {
     font-size: 1.2rem;
-    backdrop-filter: blur(3px);
-    border-radius: 4px;
   }
 
   .apresentacao button {
-    backdrop-filter: blur(3px);
-    border-radius: 4px;
+    margin-left: 0;
   }
 
   .projetos ul li:nth-child(3n + 1),
@@ -680,9 +679,26 @@ header.active {
   .titulo a {
     padding-top: 7px;
   }
+
+  .button:hover {
+    background: none;
+  }
+
+  .button:hover span svg path {
+    fill: #fff;
+  }
+
+  .button:hover a {
+    color: #fff;
+    font-weight: initial;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .apresentacao .btn-contato {
+    display: none;
+  }
+
   .sobre {
     justify-content: center;
   }
@@ -698,16 +714,17 @@ header.active {
   }
 
   .apresentacao h1 {
-    font-size: 5.5rem;
+    font-size: 4.2rem;
+    line-height: 55px;
   }
 
   .apresentacao h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 5px;
   }
 
-  .apresentacao h2::after {
-    font-size: 1.5rem;
+  .contato ul {
+    max-width: 250px;
   }
 }
 

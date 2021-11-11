@@ -106,6 +106,9 @@
 }
 
 .arrow-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border: 1px solid #1cb798;
   background: transparent;
@@ -127,4 +130,15 @@
 
 .arrow-nav button.prev {
   transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 717px) {
+  .arrow-nav button:hover {
+    background: none;
+  }
+
+  .arrow-nav button:hover svg polygon {
+    fill: #fff;
+    stroke: #fff;
+  }
 }
