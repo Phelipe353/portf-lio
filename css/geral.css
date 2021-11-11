@@ -213,6 +213,22 @@ header.active {
   margin: 15px 0 0 10px;
 }
 
+.arrow {
+  position: absolute;
+  right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 80px;
+  font-size: 2.5rem;
+  border: 2px solid #116b59;
+  border-radius: 50%;
+  color: #fff;
+  animation: arrow 4s infinite;
+}
+
 /*Sobre*/
 
 .bg-sobre {
@@ -547,6 +563,20 @@ header.active {
 
 /* animações */
 
+@keyframes arrow {
+  0%,
+  100% {
+    box-shadow: none;
+    border: 2px solid #116b59;
+  }
+
+  50% {
+    border: 2px solid #bcf3e9;
+    box-shadow: 0 0 4px #1cb798, 0 0 8px #1cb798, 0 0 10px #1cb798,
+      inset 0 0 4px #1cb798, inset 0 0 8px #1cb798, inset 0 0 10px #1cb798;
+  }
+}
+
 @keyframes front {
   20.1%,
   30%,
@@ -663,6 +693,20 @@ header.active {
 
   .apresentacao button {
     margin-left: 0;
+  }
+
+  .arrow {
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    border: 2px solid #116b59;
+    border-radius: 50%;
+    color: #fff;
   }
 
   .projetos ul li:nth-child(3n + 1),
