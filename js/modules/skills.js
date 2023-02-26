@@ -18,7 +18,7 @@ export default function listSkills() {
             const divP = document.createElement('div');
             const experience = document.createElement('p');
             if (skill.experience) {
-                //new TimeExperience(skill.experience, experience).start();
+                new TimeExperience(skill.experience, experience).start();
                 divP.appendChild(experience);
             }
             skill.texts.forEach((text) => {
