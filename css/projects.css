@@ -1,0 +1,270 @@
+.bg-projeto {
+    background: #252a2e;
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.projetos ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+    position: relative;
+}
+
+.projetos li {
+    height: 200px;
+    background: #1e2326;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.projetos li .wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.projetos li img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projetos li .fade-down {
+    width: 100%;
+    height: 0%;
+    background: #1cb798;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.projetos li:hover .fade-down {
+    height: 100%;
+}
+
+.projetos li:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(0, 0, 0, 0.2),
+    0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.projetos li .content {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.projetos .wrapper .content h3 {
+    text-transform: uppercase;
+}
+
+.projetos li .content p {
+    display: none;
+}
+
+.projetos li:hover .content {
+    z-index: 10;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.projetos li h3 {
+    font-size: 1.275rem;
+    margin-bottom: 10px;
+}
+
+.projetos li button {
+    border: 2px solid #1e2326;
+    background: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #1e2326;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;    
+    transition: all 0.2s ease-in-out;
+}
+
+.projetos li button:hover {
+    background: #1e2326;
+    color: #1cb798;
+}
+
+.projetos li a {
+    margin-right: 10px;
+}
+
+/* More details */
+
+.projetos .wrapper.details {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    margin: 0 15px;
+    max-height: 80vh;
+    width: 80%;
+    background: #1e2326;
+    display: grid;
+    grid-template-rows: minmax(30%, 50%) minmax(auto, 730px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(0, 0, 0, 0.2);
+    animation: fade-down .3s forwards ease-in-out;
+}
+
+@keyframes fade-down {
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+}
+
+.projetos .wrapper.details .expand,
+.projetos .wrapper.details .fade-down {
+    display: none;
+}
+
+.projetos .wrapper.details .content {
+    position: initial;
+    top: 0;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10;
+    transition: all 0s ease-in-out;
+    background: #1e2326;
+    padding: 20px;
+}
+
+.projetos .wrapper.details .containerImg {
+    overflow: hidden;
+    position: relative;
+}
+
+.projetos .wrapper.details img {
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projetos .wrapper.details h3 {
+    color: #ffffff;
+    margin: 0px;
+}
+
+.projetos .wrapper.details .content p {
+    display: grid;
+    grid-row-gap: 5px;
+    text-align: start;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.projetos .wrapper.details .content .tools {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.projetos .wrapper.details .subTitlesDetails {
+    color: #1cb798;
+}
+
+.projetos .wrapper.details .groupTools {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.projetos .wrapper.details .groupTools span {
+    margin: 0px 25px 10px 0;
+}
+
+.projetos .wrapper.details .groupTools span:last-child {
+    margin-right: 0px;
+}
+
+.projetos .wrapper.details .groupTools span::before {
+    content: '';
+    background: #bcf3e9;
+    width: 7px;
+    height: 3px;
+    display: inline-block;
+    margin: 0 5px 3px 0;
+    border: none;
+    box-shadow: 0 0 2px #1cb798,
+    0 0 4px #1cb798,
+    0 0 6px #1cb798;
+}
+
+
+
+.projetos .wrapper.details button {
+    border: 1px solid #1cb798;
+    color: #1cb798;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.projetos .wrapper.details button:hover {
+    background: #1cb798;
+    color: #1e2326;
+}
+
+.projetos .wrapper.details .closeDetails {
+    width: 35px;
+    height: 35px;
+    background: red;
+    position: absolute;
+    z-index: 20;
+    color: #ffffff;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    right: -15px;
+    top: -15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.backgroundModal {
+    display: none;
+}
+
+.backgroundModal.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 870px) and (max-width: 955px) {
+    .projetos li img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 646px) {
+    .projetos li img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media only screen and  (max-width: 646px) {
+    .projetos .wrapper.details {
+        margin: 0px;
+    }
+}

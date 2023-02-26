@@ -1,0 +1,157 @@
+.bg-about {
+  position: relative;
+  background: #1e2326;
+  text-align: center;
+}
+
+.about {
+  min-height: 70vh;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 40% 1fr;
+  column-gap: 40px;
+}
+
+.about-info {
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 30px; 
+}
+
+.about-info p {
+  text-align: justify;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.275rem;
+  text-indent: 3rem;
+  font-weight: 300;
+}
+
+.about-info a {
+  max-width: 180px;
+}
+
+.about .img {
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+.about-details {
+  background: #252a2e;
+
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 295px));
+  gap: 15px;
+  text-align: start;
+}
+
+.about-details li {
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.about-details li::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: #bcf3e9;
+  margin: 0 5px 3px 0;
+  box-shadow: 0 0 2px #1cb798,
+  0 0 4px #1cb798,
+  0 0 6px #1cb798;
+}
+
+
+.about-details span {
+  font-weight: 600;
+  /* color: #1cb798; */
+}
+
+.about-details a:hover {
+  color: #1cb798;
+  font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+  .about {
+    width: 100%;
+    column-gap: 20px;
+  }
+
+  .about-info {
+    padding-bottom: 40px;
+  }
+
+  .about-details li:nth-child(-n + 3) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .about-details li {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  
+
+  .about .img {
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  .bg-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about .img {
+    display: none;
+  }
+
+  .about-info {
+    align-self: center;
+  }
+
+  .about-info a {
+    margin: 0 auto;
+  }
+
+  .about-details li {
+    grid-column-start: inherit !important;
+    grid-column-end: inherit !important;
+  }
+
+  .about-details {
+    grid-template-columns: repeat(2, minmax(100px, 295px));
+  }
+  
+}
+
+@media only screen and (max-width: 540px) {
+  .about {
+    padding-bottom: 40px;
+  }
+
+  .about .h2 {
+    padding-top: 30px;
+  }
+
+  .about-details li {
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
+  }
+}

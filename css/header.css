@@ -1,0 +1,117 @@
+header {
+	width: 100%;
+	padding: 20px 0;
+	background: linear-gradient(#070f11 25%, transparent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 10;
+}
+
+header.active {
+	background: #070f11;
+}
+
+.wrapper-menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.wrapper-menu a {
+	color: white;
+}
+
+.titulo a {
+	font-size: 1.75rem;
+	font-family: 'Righteous', 'IBM Plex Mono', monospace;
+	line-height: 2.07rem;
+}
+.titulo a::before {
+	content: '</';
+	color: #bcf3e9;
+	font-size: 1.75rem;
+	font-weight: bold;
+	text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+		0 0 8px #1cb798, 0 0 16px #1cb798;
+	margin-right: 3px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.titulo a::after {
+	content: '>';
+	color: #bcf3e9;
+	font-size: 1.75rem;
+	font-weight: bold;
+	text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+		0 0 8px #1cb798, 0 0 16px #1cb798;
+	margin-left: 3px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.titulo a:hover::before,
+.titulo a:hover::after {
+	animation: animationBarra infinite 0.7s;
+}
+
+.titulo a.ativo::before,
+.titulo a.ativo::after {
+	animation: animationBarra infinite 0.2s;
+}
+
+.menu a {
+	font-size: 0.87rem;
+	padding: 5px 0 6px 0;
+	line-height: 20px;
+}
+
+.menu ul {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 400px;
+	justify-content: space-between;
+}
+
+.menu ul li {
+	text-transform: uppercase;
+}
+
+.menu a::after {
+	content: ' ';
+	border-bottom: 1px solid white;
+	display: block;
+	width: 0;
+	margin: 0 auto;
+	transition: 0.2s;
+}
+
+.menu a:hover:after {
+	border-bottom: 1px solid #bcf3e9;
+	width: 40px;
+	box-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798, 0 0 8px #1cb798,
+		0 0 16px #1cb798;
+	transition: 0.3s;
+}
+
+.menu a:hover {
+	color: #bcf3e9;
+	text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+		0 0 8px #1cb798, 0 0 16px #1cb798;
+	transition: 0.3s;
+}
+
+@media only screen and (max-width: 1000px) {
+	.wrapper-menu {
+		width: 100%;
+		padding: 0 25px;
+	}
+}
+
+@media only screen and (max-width: 717px) {
+	.wrapper-menu {
+		padding: 0;
+	}
+}

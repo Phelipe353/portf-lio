@@ -1,0 +1,87 @@
+.bg-services {
+    background: #252a2e;
+    text-align: center;
+    position: relative;
+}
+
+.services {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.services li {
+    padding: 20px;
+    background: #1e2326;
+    color: #ffffff;
+}
+
+
+.services svg {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.services p {
+    cursor: default;
+}
+
+.services [class^='svg']::after {
+    content: '';
+    background: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.services li:hover > [class^='svg']::after {
+    background: #bcf3e9;
+    box-shadow: 0 0 2px var(--clr),
+    0 0 4px var(--clr),
+    0 0 6px var(--clr),
+    0 0 8px var(--clr),
+    0 0 16px var(--clr);
+}
+
+.services svg g {
+    fill: rgba(255, 255, 255, 0.8);
+}
+
+.services li:hover svg g {
+    fill: var(--clr);
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1240px) {
+    .services {
+        width: 100%;
+        position: initial;
+        transform: translate(0);
+        padding-bottom: 40px;
+    }
+
+    .services ul {
+        gap: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
+    .services {
+        position: initial;
+        transform: translate(0);
+        padding-bottom: 50px;
+    }
+
+}

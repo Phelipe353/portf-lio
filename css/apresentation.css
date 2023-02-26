@@ -1,0 +1,152 @@
+.bg-apresentacao {
+	background: #040d21;
+	height: 100vh;
+	/* background-color: rebeccapurple; */
+}
+
+.apresentacao {
+	display: grid;
+	grid-template-columns: 1fr minmax(100px, 60%);
+	align-items: center;
+	height: 100%;
+	padding: 0 50px;
+}
+
+.apresentacao .content {
+	color: #fff;
+}
+
+.apresentacao h1 {
+	font-family: 'IBM Plex Mono', monospace;
+	letter-spacing: 2px;
+	font-size: 7rem;
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+	text-transform: uppercase;
+	line-height: 100px;
+}
+
+.apresentacao p {
+	margin: 5px 0 15px 0;
+	font-size: 2rem;
+}
+
+.apresentacao p span {
+	color: #bcf3e9;
+	text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+	0 0 8px #1cb798, 0 0 16px #1cb798;
+}
+
+.apresentacao .end { 
+	animation: front 4s linear infinite;
+}
+
+.apresentacao .btns {
+	display: flex;
+}
+
+.apresentacao .btns button {
+	color: #fff;
+}
+
+.apresentacao .btns button:hover {
+	color: #040d21;
+}
+
+.apresentacao .btns a:last-child {
+	margin-left: 20px;
+}
+
+.arrow {
+	position: absolute;
+	left: 50px;
+	bottom: 60px;
+	width: 50px;
+	height: 50px;
+	font-size: 2.5rem;
+	color: #fff;
+	animation: arrow 1.7s infinite ease-in-out;
+}
+
+@keyframes front {
+	0%, 50%, 53.1%, 56%, 59.1%, 80%, 83.1%, 100% {
+		color: #bcf3e9;
+    text-shadow: 0 0 4px #1cb798, 0 0 8px #1cb798, 0 0 16px #1cb798;
+	}
+	
+	50.1%, 53%, 56.1%, 59%, 80.1%, 83% {
+		color: #116b59;
+		text-shadow: none;
+	}
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+		color: #116b59;
+		bottom: 60px;
+  }
+
+  50% {
+		bottom: 50px;
+		color: #bcf3e9;
+    text-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798,
+		0 0 8px #1cb798, 0 0 16px #1cb798;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+	.apresentacao {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.apresentacao h1 {
+		font-size: 5rem;
+		line-height: 80px;
+	}
+
+	.apresentacao p {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 717px) {
+	.apresentacao {
+		grid-template-columns: 1fr;
+		text-align: center;
+		padding: 0;
+	}
+
+	.apresentacao h1 {
+		font-size: 20vw;
+		line-height: 20vw;
+	}
+
+	.apresentacao p {
+		font-size: 5vw;
+	}
+
+	.apresentacao .btns {
+		justify-content: center;
+	}
+
+	.apresentacao .content {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+	}
+
+	.content .info {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 0);
+	}
+
+	.arrow {
+		left: 50%;
+		bottom: 0;
+		width: 50px;
+		transform: translate3d(-50%, 0, 0);
+	}
+}

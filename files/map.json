@@ -1,0 +1,37 @@
+{
+  "type": "Map",
+  "maps": [
+    {
+      "text":"BRL",
+      "size": 1.0,
+      "country": "Brazil",
+      "city": "Brasilia",
+      "lat": "-8.444382611183245",
+      "lng": "-56.31820597958899"
+    },
+    {
+      "text":"UAE",
+      "size": 1.0,
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "lat": "23.214066",
+      "lng": "53.195262"
+    },
+    {
+      "text":"EUA",
+      "size": 1.0,
+      "country": "United State of America",
+      "city": "Washington",
+      "lat": "39.783332",
+      "lng": "-101.315664"
+    },
+    {
+      "text":"PTG",
+      "size": 1.0,
+      "country": "Portugal",
+      "city": "Lisboa",
+      "lat": "38.767054",
+      "lng": "-9.151356"
+    }
+  ]
+}

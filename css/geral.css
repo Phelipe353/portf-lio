@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'IBM Plex Mono', monospace;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+	align-items: center;
+	width: 1200px;
+	justify-content: space-between;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.h2 {
+  color: white;
+  font-family: 'Righteous', 'IBM Plex Mono', monospace;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding: 50px 0 40px 0;
+}
+
+.h2::before,
+.h2::after {
+  content: ' ';
+  display: block;
+  position: relative;
+  height: 1px;
+  background: #1cb798; 
+  line-height: 42px;
+  margin: 0 auto;
+  animation: title 4s infinite;
+}
+
+.h2::before {
+  width: 80px;
+  bottom: -50px;
+}
+
+.h2::after {
+  width: 40px;
+  margin-top: 20px;
+}
+
+@keyframes title {
+  0%,
+  100% {
+		color: #116b59;
+  }
+
+  50% {
+		color: #bcf3e9;
+    box-shadow: 0 0 1px #1cb798, 0 0 2px #1cb798, 0 0 4px #1cb798, 0 0 8px #1cb798, 0 0 16px #1cb798;
+  }
+}
+
+/* button */
+
+.button {
+  border: 1px solid #1cb798;
+  border-radius: 4px;
+  background: transparent;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #1cb798;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.275rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button svg {
+  margin-left: 10px;
+}
+.button svg path {
+  fill: #1cb798;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:hover svg path {
+  fill: #1e2326;
+}
+
+.button:hover {
+  color: #252a2e;
+  background: #1cb798;
+}
+
+/* contato */
+
+.contato {
+  background: #1e2326;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contato ul {
+  padding: 25px 0 50px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+
+.contato ul li:hover {
+  /* transform: translate3d(0, -10px, 0);
+  transition: all 0.3s ease-in-out;  */
+  animation: animationContatos forwards 0.3s;
+}
+
+/* animações */
+
+@keyframes animationBarra {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes animationProject {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animationContatos {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+/* responsivo */
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    width: auto;
+  }
+
+  .apresentacao h1 {
+    font-size: 8.8rem;
+    line-height: 105px;
+  }
+
+  .apresentacao h2 {
+    font-size: 1.6rem;
+  }
+
+  .skills-list li {
+    margin: 25px 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  .bg-apresentacao {
+    background: url('../img/background.jpg') no-repeat center center;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .apresentacao {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    padding: 10px 0;
+  }
+
+  .apresentacao h1 {
+    font-size: 6.6rem;
+    line-height: 95px;
+    padding: 0 10px;
+  }
+
+  .apresentacao h2 {
+    font-size: 1.2rem;
+  }
+
+  .apresentacao button {
+    margin-left: 0;
+  }
+
+  .menu ul li {
+    margin-left: 0;
+  }
+  
+  .titulo a {
+    padding-top: 7px;
+  }
+  
+  .h2 {
+    padding-top: 30px;
+    font-size: 1.5rem;
+  }
+
+  .h2::before {
+    width: 60px;
+    bottom: -35px;
+  }
+  
+  .h2::after {
+    width: 30px;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .about {
+    justify-content: center;
+  }
+  .about .img {
+    display: none;
+  }
+
+  .about p {
+    margin-left: 10px;
+  }
+  .about .divisor {
+    display: none;
+  }
+
+  .apresentacao h1 {
+    font-size: 4.2rem;
+    line-height: 55px;
+  }
+
+  .apresentacao h2 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  .contato ul {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  section {
+    height: auto !important;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}

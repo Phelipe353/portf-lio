@@ -1,0 +1,25 @@
+.planet {
+    width: 50vw;
+    height: 50vw;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+.planet canvas {
+    outline: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+	.planet {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media only screen and (max-width: 717px) {
+    .planet {
+        display: none;
+    }
+}

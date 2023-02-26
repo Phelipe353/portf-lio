@@ -1,0 +1,28 @@
+{
+  "type": "PullRequest",
+  "pulls":[
+    {
+      "type":"pull",
+      "order": 1,
+      "from":"BRL",
+      "to":"UAE",
+      "startLat":"-8.444382611183245",
+      "startLng": "-56.31820597958899",
+      "endLat":"23.214066",
+      "endLng":"53.195262",
+      "arcAlt": 0.05
+    },
+    {
+      "type":"pull",
+      "order": 1,
+      "from":"EUA",
+      "to":"PTG",
+      "startLat":"39.783332",
+      "startLng": "-101.315664",
+      "endLat":"38.767054",
+      "endLng":"-9.151356",
+      "arcAlt": 0.05,
+      "status": true
+    }
+  ]
+}
